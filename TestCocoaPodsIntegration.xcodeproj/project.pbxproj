@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		62711A2D268A486E00A95A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711A2C268A486E00A95A4E /* ContentView.swift */; };
 		62711A2F268A487100A95A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A2E268A487100A95A4E /* Assets.xcassets */; };
 		62711A32268A487100A95A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A31268A487100A95A4E /* Preview Assets.xcassets */; };
+		65D0144BBC4B676321325D23 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,12 @@
 		62711A2E268A487100A95A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62711A31268A487100A95A4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62711A33268A487100A95A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62711A39268A5FAE00A95A4E /* CrowdConnectedCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedCore.xcframework; path = Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework; sourceTree = "<group>"; };
+		62711A3D268A5FB500A95A4E /* CrowdConnectedIPS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedIPS.xcframework; path = Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework; sourceTree = "<group>"; };
+		62711A40268A5FBA00A95A4E /* CrowdConnectedShared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedShared.xcframework; path = Pods/CrowdConnectedShared/CrowdConnectedShared.xcframework; sourceTree = "<group>"; };
+		B63E59DEB8E0DEC32C504E0E /* Pods-TestCocoaPodsIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCocoaPodsIntegration.debug.xcconfig"; path = "Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		C1FD2170E8D3994F5471A57C /* Pods-TestCocoaPodsIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCocoaPodsIntegration.release.xcconfig"; path = "Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCocoaPodsIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +34,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D0144BBC4B676321325D23 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29D3B68B2B759EE3A1EBFBBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B63E59DEB8E0DEC32C504E0E /* Pods-TestCocoaPodsIntegration.debug.xcconfig */,
+				C1FD2170E8D3994F5471A57C /* Pods-TestCocoaPodsIntegration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C6A699CB766E2C7C1CFED4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62711A40268A5FBA00A95A4E /* CrowdConnectedShared.xcframework */,
+				62711A3D268A5FB500A95A4E /* CrowdConnectedIPS.xcframework */,
+				62711A39268A5FAE00A95A4E /* CrowdConnectedCore.xcframework */,
+				E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62711A1E268A486E00A95A4E = {
 			isa = PBXGroup;
 			children = (
 				62711A29268A486E00A95A4E /* TestCocoaPodsIntegration */,
 				62711A28268A486E00A95A4E /* Products */,
+				29D3B68B2B759EE3A1EBFBBC /* Pods */,
+				5C6A699CB766E2C7C1CFED4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62711A36268A487100A95A4E /* Build configuration list for PBXNativeTarget "TestCocoaPodsIntegration" */;
 			buildPhases = (
+				1F0BFCC612B24E9C8BB5320E /* [CP] Check Pods Manifest.lock */,
 				62711A23268A486E00A95A4E /* Sources */,
 				62711A24268A486E00A95A4E /* Frameworks */,
 				62711A25268A486E00A95A4E /* Resources */,
+				9FABB765A2AB85E7773FCBA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0BFCC612B24E9C8BB5320E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestCocoaPodsIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FABB765A2AB85E7773FCBA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62711A23268A486E00A95A4E /* Sources */ = {
@@ -264,6 +338,7 @@
 		};
 		62711A37268A487100A95A4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63E59DEB8E0DEC32C504E0E /* Pods-TestCocoaPodsIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,8 +352,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.crowdconnected.testcocoapodsintegration.TestCocoaPodsIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-arm64 $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-arm64";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +363,7 @@
 		};
 		62711A38268A487100A95A4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FD2170E8D3994F5471A57C /* Pods-TestCocoaPodsIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,8 +377,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.crowdconnected.testcocoapodsintegration.TestCocoaPodsIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-arm64 $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-arm64";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
