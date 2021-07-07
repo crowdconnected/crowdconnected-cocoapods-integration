@@ -32,6 +32,11 @@ CrowdConnected.shared.start(appKey: "YOUR_APP_KEY", token: "YOUR_TOKEN", secret:
 }
 ```
 
+For stopping the library use:
+```
+CrowdConnected.shared.stop()
+```
+
 ### Get Location permission
 
 #### Navigation-only
