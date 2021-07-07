@@ -1,4 +1,4 @@
-## How to implement the CrowdConnectedSDK using CocoaPods
+## How to implement the CrowdConnected SDK using CocoaPods
 
 ### Add pods
 Add the following dependencies to your `Podfile`: 
@@ -31,3 +31,45 @@ CrowdConnected.shared.start(appKey: "YOUR_APP_KEY", token: "YOUR_TOKEN", secret:
    // Your code here ...
 }
 ```
+
+### Get Location permission
+
+#### Navigation-only
+If using the library for navigation-only, 'While in Use' location permission is required.
+This can be done by adding a description in your `Info.plist` file as follows:
+```
+<key>NSLocationWhenInUseUsageDescription</key>	
+<string>YOUR DESCRIPTIVE TEXT HERE</string>
+```
+In the best suitable place/slow in your app, ask the user for location permission.
+```
+let locationManager = CLLocationManager()
+locationManager..requestWhenInUseAuthorization()
+```
+
+#### Background tracking and navigation
+
+If using the library for background tracking, 'Always' location permission is required.
+This can be done by adding two descriptions in your `Info.plist` file as follows:
+```
+<key>NSLocationWhenInUseUsageDescription</key>	
+<string>YOUR DESCRIPTIVE TEXT HERE</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>	
+<string>YOUR DESCRIPTIVE TEXT HERE</string>
+```
+In the best suitable place/slow in your app, ask the user for location permission.
+```
+let locationManager = CLLocationManager()
+locationManager..requestAlwaysAuthorization()
+```
+
+### Use Indoor Navigation in your app
+Library's navigation should start when the screen responsible for indoor navigation appears calling:
+```
+CrowdConnected.shared.startNavigation()
+```
+Library's navigation should stop when the screen responsible for indoor navigation disappears calling:
+```
+CrowdConnected.shared.stopNavigation()
+```
+
