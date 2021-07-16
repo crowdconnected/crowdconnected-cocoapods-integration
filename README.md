@@ -77,4 +77,18 @@ Library's navigation should stop when the screen responsible for indoor navigati
 ```
 CrowdConnected.shared.stopNavigation()
 ```
-
+Create a location provider:
+```
+class LocationProvider: CrowdConnectedDelegate {
+    func didUpdateLocation(_ locations: [Location]) {
+        // Use the location updates here
+    }
+}
+```
+Set the delegate for the SDK:
+```
+let locationProvider = LocationProvider()
+CrowdConnected.shared.delegate = locationProvider
+```
+For stopping the location updates stream, either deinitialize the `locationProvider` object or reset the delegate as follows:
+```
