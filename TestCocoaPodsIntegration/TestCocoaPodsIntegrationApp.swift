@@ -18,13 +18,13 @@ struct TestCocoaPodsIntegrationApp: App {
 
     init() {
         CrowdConnectedIPS.activate()
-        CrowdConnected.shared.start(appKey: "testKey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
-            if let deviceId = deviceId {
-                print("Device id \(deviceId)")
+        CrowdConnected.shared.start(appKey: "YOUR_APP_KEY", token: "YOUR_TOKEN", secret: "YOUR_SECRET") { deviceId, error in
+            guard let id = deviceId else {
+                // Check the error and make sure to start the library correctly
+                return
             }
-            if let error = error {
-                print("Error \(error)")
-            }
+
+            // Library started successfully
         }
         
         CrowdConnected.shared.delegate = locationsProvider
@@ -41,6 +41,6 @@ struct TestCocoaPodsIntegrationApp: App {
 
 class LocationsProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
-        print("Got locations \(locations)")
+        // Use the location updates as you need
     }
 }
