@@ -11,8 +11,23 @@
 		62711A2D268A486E00A95A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711A2C268A486E00A95A4E /* ContentView.swift */; };
 		62711A2F268A487100A95A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A2E268A487100A95A4E /* Assets.xcassets */; };
 		62711A32268A487100A95A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A31268A487100A95A4E /* Preview Assets.xcassets */; };
-		65D0144BBC4B676321325D23 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; };
+		AAC0ABC92902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; };
+		AAC0ABCA2902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAC0ABCB2902919A00298D89 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AAC0ABCA2902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		62711A27268A486E00A95A4E /* TestCocoaPodsIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCocoaPodsIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D0144BBC4B676321325D23 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */,
+				AAC0ABC92902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +126,7 @@
 				62711A24268A486E00A95A4E /* Frameworks */,
 				62711A25268A486E00A95A4E /* Resources */,
 				9FABB765A2AB85E7773FCBA7 /* [CP] Embed Pods Frameworks */,
+				AAC0ABCB2902919A00298D89 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

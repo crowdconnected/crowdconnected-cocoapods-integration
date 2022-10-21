@@ -16,9 +16,8 @@ import CoreLocation
 @main
 struct TestCocoaPodsIntegrationApp: App {
     
-
     let manager = CLLocationManager()
-    let positionUpdater = PositionUpdater()
+    let positionUpdater = LocationsProvider()
 
     init() {
         CrowdConnectedIPS.activate()
@@ -50,16 +49,14 @@ struct TestCocoaPodsIntegrationApp: App {
             ContentView()
         }
     }
-
 }
 
-class LocationsProvider: CrowdConnectedDelegate {
+final class LocationsProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
         guard let location = locations.first else {
             print("📍 CrowdConnected SDK has triggered an update with no locations")
             return
         }
         print("📍 New location update from CrowdConnected SDK. (\(location.latitude),\(location.longitude))")
-
     }
 }
