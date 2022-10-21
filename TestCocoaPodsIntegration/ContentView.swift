@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, CrowdConnected CocoaPods!")
+        Text("This is a Cocoapods integration test for the CrowdConnected SDK")
+            .font(.subheadline)
+            .multilineTextAlignment(.center)
             .padding()
     }
 }
