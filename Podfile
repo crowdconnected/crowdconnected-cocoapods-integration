@@ -11,6 +11,8 @@ target 'TestCocoaPodsIntegration' do
   pod 'CrowdConnectedGeo', '1.5.0'
   pod 'CrowdConnectedCoreBluetooth', '1.5.0'
   pod 'AWSKinesis', '2.28.0'
-  pod 'AWSMobileClientXCF'
+  pod 'AWSMobileClient'
+  pod 'AWSPinpoint'
+  # pod 'AWSMobileClientXCF'
 
 end
