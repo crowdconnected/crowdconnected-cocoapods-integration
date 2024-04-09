@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		62711A2D268A486E00A95A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711A2C268A486E00A95A4E /* ContentView.swift */; };
 		62711A2F268A487100A95A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A2E268A487100A95A4E /* Assets.xcassets */; };
 		62711A32268A487100A95A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A31268A487100A95A4E /* Preview Assets.xcassets */; };
+		AA2F2ECC2BC54717006404EF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA2F2EC92BC546BA006404EF /* PrivacyInfo.xcprivacy */; };
 		AAC0ABC92902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; };
 		AAC0ABCA2902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		62711A39268A5FAE00A95A4E /* CrowdConnectedCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedCore.xcframework; path = Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework; sourceTree = "<group>"; };
 		62711A3D268A5FB500A95A4E /* CrowdConnectedIPS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedIPS.xcframework; path = Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework; sourceTree = "<group>"; };
 		62711A40268A5FBA00A95A4E /* CrowdConnectedShared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CrowdConnectedShared.xcframework; path = Pods/CrowdConnectedShared/CrowdConnectedShared.xcframework; sourceTree = "<group>"; };
+		AA2F2EC92BC546BA006404EF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = TestCocoapodsIntegration/PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
 		B63E59DEB8E0DEC32C504E0E /* Pods-TestCocoaPodsIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCocoaPodsIntegration.debug.xcconfig"; path = "Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		C1FD2170E8D3994F5471A57C /* Pods-TestCocoaPodsIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCocoaPodsIntegration.release.xcconfig"; path = "Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCocoaPodsIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				62711A2A268A486E00A95A4E /* TestCocoaPodsIntegrationApp.swift */,
+				AA2F2EC92BC546BA006404EF /* PrivacyInfo.xcprivacy */,
 				62711A2C268A486E00A95A4E /* ContentView.swift */,
 				62711A2E268A487100A95A4E /* Assets.xcassets */,
 				62711A33268A487100A95A4E /* Info.plist */,
@@ -174,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2F2ECC2BC54717006404EF /* PrivacyInfo.xcprivacy in Resources */,
 				62711A32268A487100A95A4E /* Preview Assets.xcassets in Resources */,
 				62711A2F268A487100A95A4E /* Assets.xcassets in Resources */,
 			);
