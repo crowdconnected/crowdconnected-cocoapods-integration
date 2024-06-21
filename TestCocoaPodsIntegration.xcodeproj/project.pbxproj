@@ -130,6 +130,7 @@
 				62711A25268A486E00A95A4E /* Resources */,
 				9FABB765A2AB85E7773FCBA7 /* [CP] Embed Pods Frameworks */,
 				AAC0ABCB2902919A00298D89 /* Embed Frameworks */,
+				D3DA8AA6C7732337E8488929 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoaPodsIntegration" */;
+			buildConfigurationList = 62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoapodsIntegration" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,6 +224,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3DA8AA6C7732337E8488929 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestCocoaPodsIntegration/Pods-TestCocoaPodsIntegration-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -409,7 +427,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoaPodsIntegration" */ = {
+		62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoapodsIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62711A34268A487100A95A4E /* Debug */,

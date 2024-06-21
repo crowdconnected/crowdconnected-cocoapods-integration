@@ -16,28 +16,28 @@ PODS:
     - AWSCore (= 2.28.0)
   - AWSPinpoint (2.28.0):
     - AWSCore (= 2.28.0)
-  - CrowdConnectedCore (1.6.3):
+  - CrowdConnectedCore (1.6.4):
     - AWSKinesis
     - AWSMobileClient
     - AWSPinpoint
     - CrowdConnectedShared
-  - CrowdConnectedCoreBluetooth (1.6.3):
+  - CrowdConnectedCoreBluetooth (1.6.4):
     - CrowdConnectedShared
-  - CrowdConnectedGeo (1.6.3):
+  - CrowdConnectedGeo (1.6.4):
     - CrowdConnectedShared
-  - CrowdConnectedIPS (1.6.3):
+  - CrowdConnectedIPS (1.6.4):
     - CrowdConnectedShared
-  - CrowdConnectedShared (1.6.3)
+  - CrowdConnectedShared (1.6.4)
 
 DEPENDENCIES:
   - AWSKinesis (= 2.28.0)
   - AWSMobileClient
   - AWSPinpoint
-  - CrowdConnectedCore (= 1.6.3)
-  - CrowdConnectedCoreBluetooth (= 1.6.3)
-  - CrowdConnectedGeo (= 1.6.3)
-  - CrowdConnectedIPS (= 1.6.3)
-  - CrowdConnectedShared (= 1.6.3)
+  - CrowdConnectedCore (= 1.6.4)
+  - CrowdConnectedCoreBluetooth (= 1.6.4)
+  - CrowdConnectedGeo (= 1.6.4)
+  - CrowdConnectedIPS (= 1.6.4)
+  - CrowdConnectedShared (= 1.6.4)
 
 SPEC REPOS:
   trunk:
@@ -62,12 +62,12 @@ SPEC CHECKSUMS:
   AWSKinesis: 20157f0f42a22eb88a73a867cf57d5d6cd523c18
   AWSMobileClient: 8d466f135e8d851a76e57cbfe65bb67eb522b64c
   AWSPinpoint: f3e51482ba9dab1c6657b377d6a7f39edcb8f64f
-  CrowdConnectedCore: 91d8763ec207223f154992ea4afed15aa12556d3
-  CrowdConnectedCoreBluetooth: 72f043d3e1f79ce6a239ee7bf984bf9e8dae80ca
-  CrowdConnectedGeo: 3e8884c4dca1696b37927330d328313e26f518c0
-  CrowdConnectedIPS: b69c44a890c072b2cdc85434c7d252e5661e6eff
-  CrowdConnectedShared: d2583a256585729273dab04231bd5ec5d307570e
+  CrowdConnectedCore: d67f429c7ebcc15e7e7e5a47c5e95c5f03f916e3
+  CrowdConnectedCoreBluetooth: 616580573b4395ef73a6968a7e2b75f6286646db
+  CrowdConnectedGeo: ef20feeb8a020220d7db8431156de8014ff2cbfa
+  CrowdConnectedIPS: b427aee048ff523b249ae9a7543367221414e244
+  CrowdConnectedShared: 308c74a808d94d1ef11d818e8d4eca980a545cf7
 
-PODFILE CHECKSUM: a73f8d0dbcd777056ebbb36f8ed8c09b20a91350
+PODFILE CHECKSUM: 36f39b938308994f2f6733df59b193e01b90349c
 
-COCOAPODS: 1.14.2
+COCOAPODS: 1.15.2
