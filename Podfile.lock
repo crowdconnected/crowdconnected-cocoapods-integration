@@ -1,43 +1,41 @@
 PODS:
-  - AWSAuthCore (2.28.0):
-    - AWSCore (= 2.28.0)
-  - AWSCognitoIdentityProvider (2.28.0):
-    - AWSCognitoIdentityProviderASF (= 2.28.0)
-    - AWSCore (= 2.28.0)
-  - AWSCognitoIdentityProviderASF (2.28.0):
-    - AWSCore (= 2.28.0)
-  - AWSCore (2.28.0)
-  - AWSKinesis (2.28.0):
-    - AWSCore (= 2.28.0)
-  - AWSMobileClient (2.28.0):
-    - AWSAuthCore (= 2.28.0)
-    - AWSCognitoIdentityProvider (= 2.28.0)
-    - AWSCognitoIdentityProviderASF (= 2.28.0)
-    - AWSCore (= 2.28.0)
-  - AWSPinpoint (2.28.0):
-    - AWSCore (= 2.28.0)
-  - CrowdConnectedCore (1.6.6):
+  - AWSAuthCore (2.37.0):
+    - AWSCore (= 2.37.0)
+  - AWSCognitoIdentityProvider (2.37.0):
+    - AWSCognitoIdentityProviderASF (= 2.37.0)
+    - AWSCore (= 2.37.0)
+  - AWSCognitoIdentityProviderASF (2.37.0):
+    - AWSCore (= 2.37.0)
+  - AWSCore (2.37.0)
+  - AWSKinesis (2.37.0):
+    - AWSCore (= 2.37.0)
+  - AWSMobileClient (2.37.0):
+    - AWSAuthCore (= 2.37.0)
+    - AWSCognitoIdentityProvider (= 2.37.0)
+    - AWSCognitoIdentityProviderASF (= 2.37.0)
+    - AWSCore (= 2.37.0)
+  - AWSPinpoint (2.37.0):
+    - AWSCore (= 2.37.0)
+  - CrowdConnectedCore (1.7.0):
     - AWSKinesis
     - AWSMobileClient
     - AWSPinpoint
     - CrowdConnectedShared
-  - CrowdConnectedCoreBluetooth (1.6.6):
+  - CrowdConnectedCoreBluetooth (1.7.0):
     - CrowdConnectedShared
-  - CrowdConnectedGeo (1.6.6):
+  - CrowdConnectedGeo (1.7.0):
     - CrowdConnectedShared
-  - CrowdConnectedIPS (1.6.6):
+  - CrowdConnectedIPS (1.7.0):
     - CrowdConnectedShared
-  - CrowdConnectedShared (1.6.6)
+  - CrowdConnectedShared (1.7.0)
 
 DEPENDENCIES:
-  - AWSKinesis (= 2.28.0)
-  - AWSMobileClient
-  - AWSPinpoint
-  - CrowdConnectedCore (= 1.6.6)
-  - CrowdConnectedCoreBluetooth (= 1.6.6)
-  - CrowdConnectedGeo (= 1.6.6)
-  - CrowdConnectedIPS (= 1.6.6)
-  - CrowdConnectedShared (= 1.6.6)
+  - AWSKinesis (= 2.37.0)
+  - CrowdConnectedCore (= 1.7.0)
+  - CrowdConnectedCoreBluetooth (= 1.7.0)
+  - CrowdConnectedGeo (= 1.7.0)
+  - CrowdConnectedIPS (= 1.7.0)
+  - CrowdConnectedShared (= 1.7.0)
 
 SPEC REPOS:
   trunk:
@@ -55,19 +53,19 @@ SPEC REPOS:
     - CrowdConnectedShared
 
 SPEC CHECKSUMS:
-  AWSAuthCore: 658c331fe5cbc58608ced499aa0d8d46c57e9c96
-  AWSCognitoIdentityProvider: 9778edc430206a1bf67ff5f0c7a7b130fa4a5380
-  AWSCognitoIdentityProviderASF: a82f81ad75fce6d8c826ed394fa3cf7c51306897
-  AWSCore: 0ebe9ba8a459893cdf268ce0bae61875efd0182b
-  AWSKinesis: 20157f0f42a22eb88a73a867cf57d5d6cd523c18
-  AWSMobileClient: 8d466f135e8d851a76e57cbfe65bb67eb522b64c
-  AWSPinpoint: f3e51482ba9dab1c6657b377d6a7f39edcb8f64f
-  CrowdConnectedCore: 79f56dc86573b5a789ea049975d41d90d22e40e5
-  CrowdConnectedCoreBluetooth: 65e221fd6fe0a330677c080ffc990dcaa43274e0
-  CrowdConnectedGeo: b92bcf1bc6250859360b4d7051e62f418169a7ac
-  CrowdConnectedIPS: facc662ceaaf6b1d4b088f3e09e2c8d69922123b
-  CrowdConnectedShared: a65efb2bc78a2321bd1f6c58d565eddb5c112234
+  AWSAuthCore: ac31af667ea406fb25461dfa24040db473f5d406
+  AWSCognitoIdentityProvider: 0eaeab6e79feafc0ecf5ce0520d206531829119e
+  AWSCognitoIdentityProviderASF: 8af2705eb94e99595a9e84a0f5cbd2da61bee835
+  AWSCore: ec5b67c40ff1af71622e05a7741314fde23fd8cd
+  AWSKinesis: 60f1a3c51a166383941c26689519aba67fa1f518
+  AWSMobileClient: 867d30d1d5dcae8037a3ed899460a6f4001b7300
+  AWSPinpoint: abe94b205c23e482a08a9780c863236b4efe902f
+  CrowdConnectedCore: fe28d5c8b2b1b707d9fa0b1ab622f5fef670e028
+  CrowdConnectedCoreBluetooth: 88e45e7da7adcf5acd6b67b138f0f90eb9173ae1
+  CrowdConnectedGeo: ce651e497969801fbb7f1d114b57893b40c1a1bd
+  CrowdConnectedIPS: 73e1f7f2f07dcd0101b157cff0e44dc28e698c5b
+  CrowdConnectedShared: 32fdea1b52b9e11b8611f209799040f1631a2afe
 
-PODFILE CHECKSUM: 176a1e68a7d8e60147d43d08a33795615c64a898
+PODFILE CHECKSUM: ecd1c86aa51791c29b887d6ac139fe619698cacb
 
 COCOAPODS: 1.15.2
