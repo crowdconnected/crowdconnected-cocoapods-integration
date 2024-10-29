@@ -11,6 +11,9 @@
 		62711A2D268A486E00A95A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711A2C268A486E00A95A4E /* ContentView.swift */; };
 		62711A2F268A487100A95A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A2E268A487100A95A4E /* Assets.xcassets */; };
 		62711A32268A487100A95A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A31268A487100A95A4E /* Preview Assets.xcassets */; };
+		AA0F89D22CD1778C00E6A339 /* AWSCognitoIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = AA0F89D12CD1778C00E6A339 /* AWSCognitoIdentity */; };
+		AA0F89D42CD1778C00E6A339 /* AWSCognitoIdentityProvider in Frameworks */ = {isa = PBXBuildFile; productRef = AA0F89D32CD1778C00E6A339 /* AWSCognitoIdentityProvider */; };
+		AA0F8A0A2CD1785900E6A339 /* AWSKinesis in Frameworks */ = {isa = PBXBuildFile; productRef = AA0F8A092CD1785900E6A339 /* AWSKinesis */; };
 		AA2F2ECC2BC54717006404EF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA2F2EC92BC546BA006404EF /* PrivacyInfo.xcprivacy */; };
 		AAC0ABC92902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; };
 		AAC0ABCA2902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E34441058AAE0020A6A21F5D /* Pods_TestCocoaPodsIntegration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -51,7 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0F89D42CD1778C00E6A339 /* AWSCognitoIdentityProvider in Frameworks */,
 				AAC0ABC92902919A00298D89 /* Pods_TestCocoaPodsIntegration.framework in Frameworks */,
+				AA0F89D22CD1778C00E6A339 /* AWSCognitoIdentity in Frameworks */,
+				AA0F8A0A2CD1785900E6A339 /* AWSKinesis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +143,11 @@
 			dependencies = (
 			);
 			name = TestCocoaPodsIntegration;
+			packageProductDependencies = (
+				AA0F89D12CD1778C00E6A339 /* AWSCognitoIdentity */,
+				AA0F89D32CD1778C00E6A339 /* AWSCognitoIdentityProvider */,
+				AA0F8A092CD1785900E6A339 /* AWSKinesis */,
+			);
 			productName = TestCocoaPodsIntegration;
 			productReference = 62711A27268A486E00A95A4E /* TestCocoaPodsIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -155,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoapodsIntegration" */;
+			buildConfigurationList = 62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoaPodsIntegration" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,6 +175,9 @@
 				Base,
 			);
 			mainGroup = 62711A1E268A486E00A95A4E;
+			packageReferences = (
+				AA0F89362CD1778C00E6A339 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+			);
 			productRefGroup = 62711A28268A486E00A95A4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -427,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoapodsIntegration" */ = {
+		62711A22268A486E00A95A4E /* Build configuration list for PBXProject "TestCocoaPodsIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				62711A34268A487100A95A4E /* Debug */,
@@ -446,6 +460,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA0F89362CD1778C00E6A339 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.30;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0F89D12CD1778C00E6A339 /* AWSCognitoIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0F89362CD1778C00E6A339 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSCognitoIdentity;
+		};
+		AA0F89D32CD1778C00E6A339 /* AWSCognitoIdentityProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0F89362CD1778C00E6A339 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSCognitoIdentityProvider;
+		};
+		AA0F8A092CD1785900E6A339 /* AWSKinesis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0F89362CD1778C00E6A339 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSKinesis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62711A1F268A486E00A95A4E /* Project object */;
 }
