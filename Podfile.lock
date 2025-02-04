@@ -1,20 +1,20 @@
 PODS:
-  - CrowdConnectedCore (2.0.0):
+  - CrowdConnectedCore (2.1.2):
     - CrowdConnectedShared
-  - CrowdConnectedCoreBluetooth (2.0.0):
+  - CrowdConnectedCoreBluetooth (2.1.2):
     - CrowdConnectedShared
-  - CrowdConnectedGeo (2.0.0):
+  - CrowdConnectedGeo (2.1.2):
     - CrowdConnectedShared
-  - CrowdConnectedIPS (2.0.0):
+  - CrowdConnectedIPS (2.1.2):
     - CrowdConnectedShared
-  - CrowdConnectedShared (2.0.0)
+  - CrowdConnectedShared (2.1.2)
 
 DEPENDENCIES:
-  - CrowdConnectedCore (= 2.0.0)
-  - CrowdConnectedCoreBluetooth (= 2.0.0)
-  - CrowdConnectedGeo (= 2.0.0)
-  - CrowdConnectedIPS (= 2.0.0)
-  - CrowdConnectedShared (= 2.0.0)
+  - CrowdConnectedCore (= 2.1.2)
+  - CrowdConnectedCoreBluetooth (= 2.1.2)
+  - CrowdConnectedGeo (= 2.1.2)
+  - CrowdConnectedIPS (= 2.1.2)
+  - CrowdConnectedShared (= 2.1.2)
 
 SPEC REPOS:
   trunk:
@@ -25,12 +25,12 @@ SPEC REPOS:
     - CrowdConnectedShared
 
 SPEC CHECKSUMS:
-  CrowdConnectedCore: a75ab764b893b94382498bab080cda9dfea7fb2b
-  CrowdConnectedCoreBluetooth: 0d1dcffe7ad801abc75c6d95684437c8bef1df79
-  CrowdConnectedGeo: 3b52d2d6dfcba946e885b8beb85a7349f2233e08
-  CrowdConnectedIPS: e2b07c12cafd5c14a226b940f159d4f1821527b1
-  CrowdConnectedShared: 6ec8348ace3a787bdc78410d10bd767495bdb3bc
+  CrowdConnectedCore: f2ebab377ddfaea24595ecab4f851d6e261732ca
+  CrowdConnectedCoreBluetooth: f9dfa6abe429295be177ac470f067e3f96b72f58
+  CrowdConnectedGeo: 1e92525c8ae5e0dfb3034d898956ea2d6118c574
+  CrowdConnectedIPS: 0afd8faf689441141ab5d2f2623efcce2cfad54a
+  CrowdConnectedShared: 3d1985149f30921e8132729221c4dddc5d072f8e
 
-PODFILE CHECKSUM: de3314cfb8f3f1662c0186361b0ee3ebf23a9bfc
+PODFILE CHECKSUM: 671e7483d822a466940cdb4ab61eeb4fcc5ad3fd
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
